@@ -24,7 +24,7 @@ var cities = []string{
 }
 
 func main() {
-	dsn := "host=localhost port=5432 user=postgres password=1234 dbname=TestTask sslmode=disable"
+	dsn := "DB_url"
 	db, err := sql.Open("postgres", dsn)
 	if err != nil {
 		log.Fatal(err)

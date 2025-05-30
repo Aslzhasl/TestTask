@@ -12,6 +12,6 @@ order by points desc
 select u.id, u.username, u.points
 from friends f
          join users u on u.id = f.friend_id
-where f.user_id = (select id from users where username = 'user123')
+where f.user_id = (select id from users where username = 'user2284483')
 order by u.points desc
     limit 100;
